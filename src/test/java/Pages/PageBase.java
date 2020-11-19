@@ -27,11 +27,21 @@ public class PageBase {
     public void rotateScreenLandScape() {
         AppiumDriver appiumDriver = (AppiumDriver)(driver);
         appiumDriver.rotate(ScreenOrientation.LANDSCAPE);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void rotateScreenPortrait() {
         AppiumDriver appiumDriver = (AppiumDriver)(driver);
         appiumDriver.rotate(ScreenOrientation.PORTRAIT);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
     public void waitUntilElementIsPresent(By locator, int time) {
         try {

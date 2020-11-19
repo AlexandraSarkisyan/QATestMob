@@ -16,7 +16,7 @@ public class TestBase {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Pixel_3a_API_30_x86");
-        capabilities.setCapability("platformVersion", "9.0");
+        capabilities.setCapability("platformVersion", "4.4");
         capabilities.setCapability("appPackage", "com.flt.checklist");
         capabilities.setCapability("appActivity", "com.flt.checklist.MainActivity");
         capabilities.setCapability("automationName", "Uiautomator1");

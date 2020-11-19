@@ -68,8 +68,9 @@ public class CheckListsTest extends TestBase{
         checkListPage.fillCheckList("something");
         checkListPage.returnFromChecklist();
         int thirdListQuantity = checkListPage.getListQuantity();
+        Assert.assertEquals(secondListQuantity+1,thirdListQuantity);
         checkListPage.rotateScreenPortrait();
         int fourthListQuantity = checkListPage.getListQuantity();
-        Assert.assertEquals(thirdListQuantity+1,fourthListQuantity);
+        Assert.assertEquals(thirdListQuantity,fourthListQuantity);
     }
 }
